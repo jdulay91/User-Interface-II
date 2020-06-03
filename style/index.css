@@ -49,7 +49,7 @@ table {
 
 *{
     font-size: 62.5%;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #6D7993;
 }
 
@@ -70,10 +70,11 @@ body{
 
 h1{
     font-size: 6rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     margin-top: 0.5%;
     margin-left: 0.5%;
     color: #D5D5D5;
+    font-weight:bold;
 }
 
 .nav-container{
@@ -124,12 +125,15 @@ a.button:hover{
 
 h2{
     font-size: 4rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
 }
 
 .middle-right p{
     text-align: justify;
     margin-top: 2%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:lighter;
 }
 
 .middle-right .button{
