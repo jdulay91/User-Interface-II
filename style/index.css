@@ -23,43 +23,43 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+    body {
 	line-height: 1;
 }
-ol, ul {
+    ol, ul {
 	list-style: none;
 }
-blockquote, q {
+    blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+    blockquote:before, blockquote:after,
+    q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+    table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-*{
+    *{
     font-size: 62.5%;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #6D7993;
 }
 
-body{
+    body{
     height: 100%;
     width: 100%;
     background-color: #D5D5D5;
 }
 
-.header-container{
+    .header-container{
     height:15%;
     width:100%;
     display:flex;
@@ -68,7 +68,7 @@ body{
     overflow: hidden;
 }
 
-h1{
+    h1{
     font-size: 6rem;
     font-family: 'Open Sans Condensed', sans-serif;
     margin-top: 0.5%;
@@ -77,12 +77,12 @@ h1{
     font-weight:bold;
 }
 
-.nav-container{
+    .nav-container{
     margin-left: 4%;
     margin-bottom: 0.5%;
 }
 
-.nav-container a{
+    .nav-container a{
     width: 25%;
     height: 50%;
     font-size: 1rem;
@@ -90,17 +90,17 @@ h1{
     
 }
 
-a.button{
+    a.button{
     text-decoration: none;
     color:#6D7993;
         
 }
-a.button:hover{
+    a.button:hover{
     color: #6D7993;
     background-color: #9099A2;
 }
 
-.main-container{
+    .main-container{
     display: flex;
     height:30%;
     width:100%;
@@ -109,13 +109,13 @@ a.button:hover{
     align-items: flex-end;
 }
 
-#main-image{
+    #main-image{
     height: 90%;
     width: 40%;
     margin: 1% 1%;
 }
 
-.middle-right{
+    .middle-right{
    height: 90%;
    width:50%;
    margin-bottom: 1%;
@@ -123,38 +123,38 @@ a.button:hover{
    font-style: normal;
 }
 
-h2{
+    h2{
     font-size: 4rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
 }
 
-.middle-right p{
+    .middle-right p{
     text-align: justify;
     margin-top: 2%;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight:lighter;
 }
 
-.middle-right .button{
+    .middle-right .button{
     font-size: 2rem;    
 }
 
-.image-container{
+    .image-container{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     width: auto;
     height: 20%;
     margin-bottom: 1%;
-    margin-left: 0.5%;
+    flex-wrap:wrap;
 }
 
-.image-container img{
+    .image-container img{
     height: auto;
-    width: 20%;
+    width: auto;
 }
 
-.footer-container{
+    .footer-container{
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -164,18 +164,18 @@ h2{
     background-color:#6D7993;
 }
 
-.footer-container h2{
+    .footer-container h2{
     color: #D5D5D5;
     font-size: 4rem;
     
 }
-#final-link{
+    #final-link{
     color:#6D7993;
     font-size: 2rem;
     text-decoration: none;
 }
 
-.fa {
+    .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -198,14 +198,16 @@ h2{
     color: white;    
 }
 
-#social-media{
+    #social-media{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
 }
 
-.thumbnail{
-    height:5vh;
-    width: 5vw;
+.image-text-container p{
+    text-align:center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
