@@ -1,1 +1,108 @@
-/* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+font-size: 62.5%;  
+font: inherit;  
+vertical-align: baseline;  
+box-sizing:border-box ;
+max-width: 100%; 
+border: 1px solid grey;
+font-family: 'Open Sans Condensed', sans-serif;
+text-decoration: none;
+
+}
+
+html{
+    height:100%;
+}
+
+.header-wrapper{
+    width: 100%;
+    height: 15vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center;
+    background-color: #464159;
+}
+
+.header-wrapper h1{
+    font-size: 4.5rem;    
+    margin-left: 1%;
+    margin-top:1.5%;
+    color:whitesmoke;
+}
+
+.nav-wrapper{
+    margin-left:2.5%;
+    width:17%;
+    margin-bottom:2%;
+    background-color: #C7F0DB;
+    display:flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper a{
+    font-size: 2rem;
+    text-align: center;
+    color:black;
+}
+
+.nav-wrapper a:hover{
+    background-color: #6c7895;
+    color:whitesmoke;
+}
+
+.main-wrapper{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    height:30%;  
+}
+
+.image-wrapper{
+    width:40%;
+}
+.main-wrapper img{
+    width:100%;
+    height:auto;  
+    margin-top:1%;  
+}
+
+.main-text-container{
+    width: 40%;
+    height:100%;
+}
+
+.main-text-container h2{
+    color:whitesmoke;
+}
+
+.main-text-container button a{
+    color:black;
+    background-color: #C7F0DB;
+}
+
+.main-text-container button:hover{
+    background-color: #6c7895;
+    color:whitesmoke;
+}
+
+.main-body{
+    background-color: #6C7B95;
+}
