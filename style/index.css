@@ -19,7 +19,7 @@ font: inherit;
 vertical-align: baseline;  
 box-sizing:border-box ;
 max-width: 100%; 
-/*border: 1px solid white;*/
+border: 1px solid white;
 font-family: 'Open Sans Condensed', sans-serif;
 text-decoration: none;
 
@@ -260,7 +260,7 @@ figcaption:hover{
     }
 
     .nav-wrapper{
-        margin-top: 5%;
+        margin-top: 15%;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -298,29 +298,33 @@ figcaption:hover{
         justify-content: space-around;
         align-items: flex-end;
         height:90vh;
-        padding-bottom: 15%;
+        padding-bottom: 70%;
     }
 
     .image-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:40%;
+        
     }
 
     .image-text-container{
         height: 100%;
         width: 100%;
+        
     }
 
     .thumbnail{
-        width:20vw;
-        height:20vh;
-        margin-left: 25%;
+        width:auto;
+        height:200%;
+        margin-left:20%;
+        margin-top: 40%;
+                       
     }
 
     figcaption{
-        margin-top:25%;
+         
+        font-size:2rem;
     } 
 }
 
