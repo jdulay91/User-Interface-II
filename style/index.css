@@ -44,17 +44,17 @@ html{
     font-size: 4.5rem;    
     margin-left: 1%;
     margin-top:1.5%;
+    padding-top: 1.5%;
     color:whitesmoke;
 }
 
 .nav-wrapper{
     margin-left:2.5%;
     width:20%;
-    margin-bottom:3.5%;
+    margin-bottom:4%;
     background-color: #C7F0DB;
     display:flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     
 }
 
@@ -255,12 +255,12 @@ figcaption:hover{
     }
 
     .header-wrapper h1{
-        padding-top: 25%;
+        padding-top: 30%;
         font-weight: bold;
     }
 
     .nav-wrapper{
-        margin-top: 1%;
+        margin-top: 5%;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -271,7 +271,7 @@ figcaption:hover{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding-top:20%;
+        padding-top:30%;
     }
 
     .main-text-container{
@@ -320,8 +320,18 @@ figcaption:hover{
     }
 
     figcaption{
-        margin-top:22%;
+        margin-top:25%;
     } 
+}
+
+@media only screen and (max-width:600px){
+    .thumbnail-container{
+        padding-bottom: 35%;
+    }
+
+    figcaption{
+        margin-top: 30%;
+    }
 }
 
 @media only screen and (max-width:500px){
