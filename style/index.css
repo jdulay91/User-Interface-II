@@ -358,8 +358,18 @@ figcaption:hover{
     }
 
     footer button a{
-        font-size:1.5rem
+        font-size:1rem
     }
+
+    button a{
+        font-size: 1rem;
+    }
+
+    button{
+        font-size: .75rem;
+    }
+
+ 
 
 }
 
@@ -402,6 +412,14 @@ figcaption:hover{
 
     footer button a{
         font-size:1.5rem
+    }
+
+    button a {
+        font-size:1rem
+    }
+
+    buton{
+        font-size: 0.75rem;
     }
 
 }
