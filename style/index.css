@@ -19,7 +19,7 @@ font: inherit;
 vertical-align: baseline;  
 box-sizing:border-box ;
 max-width: 100%; 
-/*border: 1px solid grey;*/
+/*border: 1px solid white;*/
 font-family: 'Open Sans Condensed', sans-serif;
 text-decoration: none;
 
@@ -49,17 +49,21 @@ html{
 
 .nav-wrapper{
     margin-left:2.5%;
-    width:17%;
-    margin-bottom:2%;
+    width:20%;
+    margin-bottom:3.5%;
     background-color: #C7F0DB;
     display:flex;
     justify-content: space-between;
+    
+    
 }
 
 .nav-wrapper a{
     font-size: 2rem;
     text-align: center;
     color:black;
+    background-color: #C7F0DB
+
 }
 
 .nav-wrapper a:hover{
@@ -67,26 +71,36 @@ html{
     color:whitesmoke;
 }
 
-.main-wrapper{
+.main-wrapper {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items:center;
+    flex-wrap:wrap;
     width:100%;
-    height:30%;  
+    height:25%;  
+    padding-bottom: 1.5%;
+    
 }
 
 .main-image-wrapper{
-    width:40%;
+    width:50%;
+    margin-top: 0 auto;
+    padding-top:2%;
 }
-.main-wrapper img{
+
+#main-image{
     width:100%;
-    height:auto;  
-    margin-top:1%;  
+    height:auto;       
 }
 
 .main-text-container{
     width: 40%;
-    height:100%;
+    height:auto;
+    /*padding-top: %;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .main-text-container h2{
@@ -109,31 +123,60 @@ html{
 .main-text-container p{
     font-size: 2.5rem;
     color:whitesmoke;
+    text-align: justify;
 }
 
 .main-body{
     background-color: #6C7B95;
 }
 
-.thumbnail-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 40%;
-}
+
 
 .image-container{
     width:100%;
     display:flex;
     justify-content: space-evenly;
-    height:40%;
+    height:30vh;
+    
 }
 
 figcaption{
     color:white;
     font-size: 1.5rem;
     text-align: center;
+
+}
+
+.image-text-container{
+    width:15vw;
+    height:60vh;
+
+}
+
+.image-wrapper{
+    height: 40%;
+    width:auto;
+    position:relative;
+    display:block;
+
+}
+
+.image-wrapper:before{
+    content:'';
+    display:block;
+    width:100%;
+    padding-bottom:56.25%;
+    
+}
+
+.thumbnail{
+    height:auto;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 
 }
 
@@ -168,6 +211,7 @@ footer button:hover{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-top: 1%;
 }
 
 .fa {
@@ -191,4 +235,9 @@ footer button:hover{
   .fa-linkedin {
     background: #007bb5;
     color: white;    
+}
+
+figcaption:hover{
+    text-shadow: 0px -1px 0px rgba(255,255,255,.5);
+    font-size:2rem;
 }
