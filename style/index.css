@@ -278,6 +278,7 @@ figcaption:hover{
         align-items: center;
         justify-content: center;
         width:100%;
+        
     }
 
     .main-image-wrapper{
@@ -298,7 +299,7 @@ figcaption:hover{
         justify-content: space-around;
         align-items: flex-end;
         height:90vh;
-        padding-bottom: 70%;
+        padding-bottom: 55%;
     }
 
     .image-container{
