@@ -1,3 +1,222 @@
+
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+font-size: 62.5%;  
+font: inherit;  
+vertical-align: baseline;  
+box-sizing:border-box ;
+max-width: 100%; 
+/*border: 1px solid white;*/
+font-family: 'Open Sans Condensed', sans-serif;
+text-decoration: none;
+
+}
+
+html{
+    height:100%;
+}
+
+.header-wrapper{
+    width: 100%;
+    height: 15vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center;
+    background-color: #464159;
+}
+
+.header-wrapper h1{
+    font-size: 4.5rem;    
+    margin-left: 1%;
+    margin-top:1.5%;
+    padding-top: 1.5%;
+    color:whitesmoke;
+}
+
+.nav-wrapper{
+    margin-left:2.5%;
+    width:20%;
+    margin-bottom:4%;
+    background-color: #C7F0DB;
+    display:flex;
+    justify-content: space-between;    
+    
+}
+
+.nav-wrapper a{
+    font-size: 2rem;
+    text-align: center;
+    color:black;
+    background-color: #C7F0DB
+
+}
+
+.nav-wrapper a:hover{
+    background-color: #6c7895;
+    color:whitesmoke;
+}
+
+.main-wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    width:100%;
+    height:25%;  
+    padding-bottom: 1.5%;
+    
+}
+
+.main-image-wrapper{
+    width:50%;
+    margin-top: 0 auto;
+    padding-top:2%;
+}
+
+#main-image{
+    width:100%;
+    height:auto;       
+}
+
+.main-text-container{
+    width: 40%;
+    height:auto;
+    /*padding-top: %;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-text-container h2{
+    color:whitesmoke;
+    font-size:3.5rem;
+}
+
+.main-text-container button a{
+    color:black;
+    background-color: #C7F0DB;
+    font-size: 1.5rem;
+}
+
+.main-text-container a:hover,
+.main-text-container button:hover{
+    background-color: #6c7895;
+    color:whitesmoke;
+}
+
+.main-text-container p{
+    font-size: 2.5rem;
+    color:whitesmoke;
+    text-align: justify;
+}
+
+.main-body{
+    background-color: #6C7B95;
+    padding-bottom: 3%;
+}
+
+.image-container{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    height:30vh;
+    
+}
+
+figcaption{
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.image-text-container{
+    width:15vw;
+    height:60vh;
+
+}
+
+.image-wrapper{
+    height: 40%;
+    width:auto;
+    position:relative;
+    display:block;
+
+}
+
+.image-wrapper:before{
+    content:'';
+    display:block;
+    width:100%;
+    padding-bottom:56.25%;
+    
+}
+
+.thumbnail{
+    height:auto;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+}
+
+.footer-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height:30%;
+    background-color:  #464159;
+    padding-top: 3%;
+}
+
+footer h2{
+    color:whitesmoke;
+    font-size: 3.5rem;
+}
+
+footer button a{
+    font-size: 2rem;
+    color:black;
+    background-color: #CFF0DB;
+}
+
+footer button a:hover,
+footer button:hover{
+    background-color: #6c7895;
+    color:whitesmoke
+}
+
+.social-media{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.fa {
+=======
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,6 +395,7 @@ time, mark, audio, video {
 }
 
     .fa {
+
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -198,6 +418,151 @@ time, mark, audio, video {
     color: white;    
 }
 
+
+figcaption:hover{
+    text-shadow: 0px -1px 0px rgba(255,255,255,.5);
+    font-size:2rem;
+}
+
+@media only screen and (max-width:800px){
+    .remove{
+        display:none;
+    }
+
+    .header-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .header-wrapper h1{
+        padding-top: 30%;
+        font-weight: bold;
+    }
+
+    .nav-wrapper{
+        margin-top: 15%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top:30%;
+    }
+
+    .main-text-container{
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        
+    }
+
+    .main-image-wrapper{
+        margin-top:0.5%;
+    }
+
+    .main-text-container p{
+        font-size: 1.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+
+    .thumbnail-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        height:90vh;
+        padding-bottom: 55%;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .image-text-container{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .thumbnail{
+        width:auto;
+        height:200%;
+        margin-left:20%;
+        margin-top: 40%;
+                       
+    }
+
+    figcaption{
+         
+        font-size:2rem;
+    } 
+}
+
+@media only screen and (max-width:500px){
+
+    .header-wrapper h1{
+        padding-top: 65%;
+        font-size: 2rem;        
+    }
+ 
+
+    .nav-wrapper a{
+        font-size: 1rem;
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top:55%;
+    }
+    
+    .thumbnail-container{
+        margin: 0 auto;
+        padding-bottom: 50%;
+    }
+
+    .thumbnail{
+        width: auto;
+        height:200%;
+    }
+
+    figcaption{
+        margin-top:70%;
+    }
+
+    footer h2{
+        font-size:2rem;
+    }
+
+    footer button a{
+        font-size:1rem
+    }
+
+    button a{
+        font-size: 1rem;
+    }
+
+    button{
+        font-size: .75rem;
+    }
+
+ 
+
+
     #social-media{
     display:flex;
     flex-direction:row;
@@ -210,4 +575,5 @@ time, mark, audio, video {
     font-weight: bold;
     font-size: 2rem;
     text-transform: capitalize;
+
 }
